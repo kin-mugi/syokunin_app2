@@ -73,4 +73,9 @@ Rails.application.configure do
 
   # Uncomment if you wish to allow Action Cable access from any origin.
   # config.action_cable.disable_request_forgery_protection = true
+
+  #rails s にて修正を反映させる
+  config.cache_classes = false
+  config.reload_classes_only_on_change = false
+
 end
